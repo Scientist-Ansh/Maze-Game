@@ -142,19 +142,19 @@ document.addEventListener("keydown", (event) => {
   switch (event.code) {
     case "ArrowUp":
     case "KeyW":
-      if (y > -15) Body.setVelocity(ball, { x, y: y - 5 });
+      if (y > -10) Body.setVelocity(ball, { x, y: y - 5 });
       break;
     case "ArrowLeft":
     case "KeyA":
-      if (x > -15) Body.setVelocity(ball, { x: x - 5, y });
+      if (x > -10) Body.setVelocity(ball, { x: x - 5, y });
       break;
     case "ArrowRight":
     case "KeyD":
-      if (x < 15) Body.setVelocity(ball, { x: x + 5, y });
+      if (x < 10) Body.setVelocity(ball, { x: x + 5, y });
       break;
     case "ArrowDown":
     case "KeyS":
-      if (y < 15) Body.setVelocity(ball, { x: x, y: y + 5 });
+      if (y < 10) Body.setVelocity(ball, { x: x, y: y + 5 });
       break;
   }
 });
